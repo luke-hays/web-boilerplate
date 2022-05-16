@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const paths = require('./paths');
 
@@ -40,6 +41,8 @@ module.exports = {
       title: 'Webpack React Boilerplate',
       template: paths.public + '/index.html',
     }),
+
+    new ESLintPlugin(),
   ],
 
   // Determine how modules within the project are treated

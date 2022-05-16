@@ -83,7 +83,24 @@ add playwright config, scripts, and make sure jest doesnt attempt to run playwri
 ## Tailwind
 
 ## Eslint
+eslint
+run @eslint/config
+
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+        "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-playwright": "^0.9.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+
+    most are install with config init
+
+    eslint-webpack-plugin
 
 ## Prettier
-
 prettier (package)
