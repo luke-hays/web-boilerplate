@@ -65,9 +65,10 @@ Set up jest config and setupTests file, use tsx for files
 ["@babel/preset-react", {"runtime": "automatic"}],
 jest-environment-jsdom and setting jsdom testEnv 
 
-## Tailwind
-
 ## Playwright
+@playwright/test
+
+## Tailwind
 
 ## Eslint
 

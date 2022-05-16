@@ -14,5 +14,8 @@
     "node_modules",
     "<rootDir>/src/index.tsx"
   ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/e2e"
+  ],
   "testEnvironment": "jsdom"
 }
