@@ -52,4 +52,23 @@ ts-loader
 @types/react
 @types/react-dom
 
+## Jest/ReactTestLibrary
+babel-jest
+jest
+@testing-library/react
+@testing-library/jest-dom
+@testing-library/user-event
+@types/jest
+@babel/preset-typescript
 
+Set up jest config and setupTests file, use tsx for files
+["@babel/preset-react", {"runtime": "automatic"}],
+jest-environment-jsdom and setting jsdom testEnv 
+
+## Tailwind
+
+## Playwright
+
+## Eslint
+
+## Prettier

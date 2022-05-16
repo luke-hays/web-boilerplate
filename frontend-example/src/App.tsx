@@ -1,4 +1,4 @@
-const App = () => {
+const App = (): JSX.Element => {
   return <div>Hello React Webpack</div>
 }
 
