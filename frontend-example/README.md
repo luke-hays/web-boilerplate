@@ -81,6 +81,12 @@ jest-environment-jsdom and setting jsdom testEnv
 add playwright config, scripts, and make sure jest doesnt attempt to run playwright tests and vice versa. works well out of the box
 
 ## Tailwind
+tailwindcss
+postcss
+autoprefixer
+
+This has jacked my config up but works now
+
 
 ## Eslint
 eslint
@@ -101,6 +107,9 @@ run @eslint/config
     most are install with config init
 
     eslint-webpack-plugin
+    const ESLintPlugin = require('eslint-webpack-plugin');
+    add to webpack config
+    ignore css
 
 ## Prettier
 prettier (package)
