@@ -21,6 +21,6 @@ const config: PlaywrightTestConfig = {
       use: { ...devices['Desktop Safari'] },
     },
   ],
-  testMatch: /e2e\/.*(test|spec)\.(js|ts|mjs)$/i
+  testMatch: /e2e\/.*(test|spec)\.(js|ts|mjs)$/i,
 };
 export default config;

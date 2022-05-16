@@ -1,8 +1,8 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const paths = require('./paths')
+const paths = require('./paths');
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -38,7 +38,7 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'Webpack React Boilerplate',
-      template: paths.public + '/index.html'
+      template: paths.public + '/index.html',
     }),
   ],
 
@@ -46,7 +46,7 @@ module.exports = {
   module: {
     rules: [
       // TypeScript
-      { 
+      {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
@@ -70,4 +70,4 @@ module.exports = {
       assets: paths.public,
     },
   },
-}
+};
