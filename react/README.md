@@ -39,6 +39,7 @@ style-loader
 
 react
 react-dom
+react-router-dom
 
 ### Webpack Babel
 
@@ -60,6 +61,7 @@ ts-loader
 @types/node
 @types/react
 @types/react-dom
+@types/react-router-dom
 
 ## Jest/ReactTestLibrary
 
