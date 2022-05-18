@@ -115,3 +115,7 @@ run @eslint/config
 
 ## Prettier
 prettier (package)
+
+## graphql
+graphql
+apolloclient
