@@ -1,19 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import About from 'views/About';
-import Navbar from 'components/Navbar';
-import App from './App';
+import Home from 'views/Home';
 
 const AppRoutes = (): JSX.Element => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<App />} />
-        <Route path="*" element={<div>Error</div>} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/about" element={<About />} />
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<div>Error</div>} />
+    </Routes>
   );
 };
 

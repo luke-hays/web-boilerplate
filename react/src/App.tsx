@@ -1,7 +1,14 @@
+import AppRoutes from 'AppRoutes';
+
+import Navbar from 'components/Navbar';
+
 const App = (): JSX.Element => {
   return (
     <div>
-      <h1 className="text-xl underline">Hello React Webpack</h1>
+      <Navbar />
+      <div>
+        <AppRoutes />
+      </div>
     </div>
   );
 };
