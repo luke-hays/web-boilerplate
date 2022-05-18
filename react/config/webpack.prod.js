@@ -12,6 +12,26 @@ module.exports = merge(common, {
     publicPath: '/',
     filename: 'js/[name].[contenthash].bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.(sass|scss|css)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              sourceMap: false,
+              modules: false,
+            },
+          },
+          'postcss-loader',
+          'sass-loader',
+        ],
+      },
+    ],
+  },
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), '...'],

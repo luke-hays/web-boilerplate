@@ -44,12 +44,6 @@ module.exports = {
     }),
 
     new ESLintPlugin(),
-
-    // Extracts CSS into separate files
-    new MiniCssExtractPlugin({
-      filename: 'styles/[name].[contenthash].css',
-      chunkFilename: '[id].css',
-    }),
   ],
 
   // Determine how modules within the project are treated
@@ -69,12 +63,6 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
-
-      // Styles: Inject CSS into the head with source maps
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
     ],
   },
 

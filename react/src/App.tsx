@@ -5,8 +5,10 @@ import Navbar from 'components/Navbar';
 const App = (): JSX.Element => {
   return (
     <div>
-      <Navbar />
-      <div>
+      <div id="NavbarContainer">
+        <Navbar />
+      </div>
+      <div id="MainContainer">
         <AppRoutes />
       </div>
     </div>
