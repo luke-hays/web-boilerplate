@@ -44,6 +44,11 @@ module.exports = {
     }),
 
     new ESLintPlugin(),
+
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.css',
+      chunkFilename: '[id].css'
+    }),
   ],
 
   // Determine how modules within the project are treated
@@ -63,6 +68,18 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+
+      // Styles: CSS
+      { 
+        test: /\.css$/i,
+        include: paths.src,
+        exclude: /node_modules/,
+        use: [
+          "style-loader",
+          "css-loader",
+          "postcss-loader"
+        ]
+      }
     ],
   },
 

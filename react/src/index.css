@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#NavbarContainer {
+  background-color: red;
+}
+
+#MainContainer {
+  background-color: red;
+}
