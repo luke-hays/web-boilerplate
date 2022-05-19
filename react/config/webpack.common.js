@@ -2,7 +2,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const paths = require('./paths');
 
@@ -44,11 +43,6 @@ module.exports = {
     }),
 
     new ESLintPlugin(),
-
-    new MiniCssExtractPlugin({
-      filename: '[name].bundle.css',
-      chunkFilename: '[id].css'
-    }),
   ],
 
   // Determine how modules within the project are treated
@@ -68,18 +62,6 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
-
-      // Styles: CSS
-      { 
-        test: /\.css$/i,
-        include: paths.src,
-        exclude: /node_modules/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader"
-        ]
-      }
     ],
   },
 

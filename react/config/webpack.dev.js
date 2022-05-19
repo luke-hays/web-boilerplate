@@ -17,4 +17,21 @@ module.exports = merge(common, {
     hot: true,
     port: 8080,
   },
-});
+  module: {
+    rules: [
+        // Styles: CSS
+        {
+          test: /\.css$/i,
+          use: [
+            "style-loader",
+            {
+              loader: 'css-loader',
+              options: { sourceMap: true, importLoaders: 1, modules: false },
+            },
+            { loader: 'postcss-loader', options: { sourceMap: true } },
+          ]
+        }
+      ]
+    }
+  }
+);
