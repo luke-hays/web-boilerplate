@@ -1,12 +1,14 @@
 import AppRoutes from 'AppRoutes';
 
-import Navbar from 'components/Navbar';
+import Header from './views/Header/Header';
+
+import './App.css';
 
 const App = (): JSX.Element => {
   return (
     <div>
-      <div id="NavbarContainer">
-        <Navbar />
+      <div id="HeaderContainer">
+        <Header />
       </div>
       <div id="MainContainer">
         <AppRoutes />
