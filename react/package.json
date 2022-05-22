@@ -12,7 +12,7 @@
     "lint:fix": "npx eslint --quiet --fix ./src/",
     "playwright": "npx playwright test",
     "playwright:headed": "npx playwright test --headed"
-  },
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",

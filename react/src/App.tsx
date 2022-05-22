@@ -2,8 +2,6 @@ import AppRoutes from 'AppRoutes';
 
 import Header from './views/Header/Header';
 
-import './App.css';
-
 const App = (): JSX.Element => {
   return (
     <div>
