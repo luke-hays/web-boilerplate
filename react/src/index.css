@@ -12,7 +12,7 @@ body {
 
 #HeaderContainer {
   background-color: #313234;
-  color: #e1e1e1;
+  color: #d9d2c1;
   height: 50px;
   position: fixed;
   width: 100%;
@@ -22,7 +22,7 @@ body {
 
 #MainContainer {
   background-color: #363f52;
-  color:#e1e1e1;
+  color:#d9d2c1;
   margin-top: 50px;
   height: calc(100vh - 50px);
   width: 100%;
