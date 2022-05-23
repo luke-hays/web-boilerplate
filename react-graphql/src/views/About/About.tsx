@@ -1,5 +1,4 @@
 import useAbout from 'hooks/useAbout';
-import ErrorBoundary from 'views/ErrorBoundary/ErrorBoundary';
 
 const dataStyle = {
   color: '#e7c36c',
