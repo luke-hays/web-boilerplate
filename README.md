@@ -3,6 +3,7 @@ Spinner animation
 Theme
 MEAN Setup
 Deal with hardcoded backend address
+Styling on ErrorBoundary page (maybe clean it up as well)
 
 Backend TODO:
 REST Implementation
