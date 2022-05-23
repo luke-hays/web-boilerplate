@@ -18,8 +18,4 @@ maybe self hosting solution?
 
 A "Vanilla" JS site has been setup - no SPA. This uses scss for styling. Still utilizing webpack though.
 
-Need to consider:
-Routing
-Queries
-Testing (This I might disregard - this template is more for learning the underlying concepts of all these frameworks and libraries Ive been abusing)
-
+No testing on this one - more for learning the underlying html/css/js and concepts for these libraries and frameworks.
