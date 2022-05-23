@@ -16,4 +16,10 @@ Could consider Infra as Code Solutions into here
 Setting up templates for different cloud providers
 maybe self hosting solution?
 
+A "Vanilla" JS site has been setup - no SPA. This uses scss for styling. Still utilizing webpack though.
+
+Need to consider:
+Routing
+Queries
+Testing (This I might disregard - this template is more for learning the underlying concepts of all these frameworks and libraries Ive been abusing)
 
