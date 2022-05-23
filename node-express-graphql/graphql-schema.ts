@@ -1,4 +1,4 @@
-let aboutMessage = 'Issue Tracker API v1.0';
+let aboutMessage = 'Template API with GraphQL';
 
 const setAboutMessage = (_: object, { message }: { message: string }): string => {
   aboutMessage = message;
