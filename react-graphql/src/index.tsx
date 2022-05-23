@@ -6,6 +6,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import './index.css';
 
 import App from 'App';
+import ErrorBoundary from 'views/ErrorBoundary/ErrorBoundary';
 
 const client = new ApolloClient({
   uri: 'http://localhost:3001/graphql',
@@ -20,7 +21,9 @@ root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <BrowserRouter>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>

@@ -1,4 +1,5 @@
 import useAbout from 'hooks/useAbout';
+import ErrorBoundary from 'views/ErrorBoundary/ErrorBoundary';
 
 const dataStyle = {
   color: '#e7c36c',
@@ -11,7 +12,7 @@ const About = (): JSX.Element => {
     return (
       <div className="mt-10 flex items-center justify-center">Loading...</div>
     );
-  if (error) return <div>error</div>;
+  if (error) throw new Error('test');
 
   return (
     <div className="mx-3 mt-5">
