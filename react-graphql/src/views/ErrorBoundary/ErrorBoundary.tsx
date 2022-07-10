@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { Component, ErrorInfo, ReactNode } from 'react';
 
 interface Props {
@@ -16,25 +15,34 @@ class ErrorBoundary extends Component<Props, State> {
     this.state = { hasError: false, error: null };
   }
 
-  public static getDerivedStateFromError(error: Error): State {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true, error };
-  }
-
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     // You can also log the error to an error reporting service
     console.log(error, errorInfo);
   }
 
+  public static getDerivedStateFromError(error: Error): State {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true, error };
+  }
+
+  private HasError(): boolean {
+    return this.state.hasError
+  }
+
+  private ErrorMessage(): string {
+    if (this.state.error) {
+      return this.state.error.message;
+    }
+    return '';
+  }
+
   public render(): JSX.Element | ReactNode {
-    const renderState: State = this.state;
-    const renderProps: Props = this.props;
-    if (renderState.hasError) {
+    if (this.HasError()) {
       // You can render any custom fallback UI
-      return <h1>Something went wrong: {renderState.error?.message}.</h1>;
+      return <h1>Something went wrong: {this.ErrorMessage()}.</h1>;
     }
 
-    return renderProps.children;
+    return this.props.children;
   }
 }
 
